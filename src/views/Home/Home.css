@@ -1,0 +1,23 @@
+.app-title-container{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    border: 5px double black
+}
+
+.app-title{
+    text-align: center;
+}
+
+.notes-container{
+    background-color: white;
+    padding: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    border: 5px double black
+}
