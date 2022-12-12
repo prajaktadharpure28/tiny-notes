@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./Home.css"
+import swal from 'sweetalert'
 
 import Navbar from '../../components/Navbar/Navbar'
 import Note from '../../components/Note/Note'
@@ -26,10 +27,23 @@ function Home() {
         // temp.push(newNote)
         // setNotes(temp);
 
+        if(title === "" || content === ""){
+            swal({
+                title: "Error",
+                text: "Please fill all the fields",
+                icon: "error",
+            })
+            return;
+        }
+
         setNotes([...notes, newNote])
 
-        alert("Note added successfully")
-        
+        swal({
+            title: "Note Added",
+            text: "Your note has been added to the list",
+            icon: "success",
+        })
+
         setTitle("")
         setContent("")
     }
