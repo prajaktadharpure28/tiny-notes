@@ -67,6 +67,7 @@ function Home() {
 
     return (
         <div>
+            <Navbar />
             <div className="app-title-container">
                 <h1 className='app-title'>My Notes</h1>
             </div>
